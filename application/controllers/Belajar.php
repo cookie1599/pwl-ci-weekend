@@ -6,21 +6,21 @@ class Belajar extends CI_Controller {
     function __construct(){
         parent::__construct();
         //$this->load->helper('html');
+        $this->load->model('m_data');
 
     }
  
     public function index(){
         $this->load->view('belajar_view');
-        //$this->load->view('belajar_helper');
+        $this->load->view('belajar_helper');
     }
  
     public function halo(){
         echo "ini method halo pada controller belajar";
     }
 
-    public function mahasiswa(){
-        $data['mahasiswa'] = $this->data->ambil_data()->result();
-        $this->load->view('mahasiswa',$data);
+    public function user(){
+        $data['user'] = $this->m_data->ambil_data()->result();
+        $this->load->view('v_user',$data);
     }
- 
 }
