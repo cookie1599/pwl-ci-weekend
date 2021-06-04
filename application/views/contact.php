@@ -1,1 +1,0 @@
-<h2>Ini halaman contact</h2>
