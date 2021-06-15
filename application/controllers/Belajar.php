@@ -10,14 +10,14 @@ class Belajar extends CI_Controller {
 
     }
  
-    public function index(){
-        $this->load->view('belajar_view');
-        $this->load->view('belajar_helper');
-    }
+    // public function index(){
+    //     $this->load->view('belajar_view');
+    //     $this->load->view('belajar_helper');
+    // }
  
-    public function halo(){
-        echo "ini method halo pada controller belajar";
-    }
+    // public function halo(){
+    //     echo "ini method halo pada controller belajar";
+    // }
 
     public function user(){
         $data['user'] = $this->m_data->ambil_data()->result();
